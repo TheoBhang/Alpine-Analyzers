@@ -78,7 +78,7 @@
           "caption": "Abuse_Finder: Long report template"
         }
       ],
-      "dockerImage": "theobhang/abuse_finder_alpine:3"
+      "dockerImage": "theobhang/abuse_finder_alpine:1"
     }
     ,
     {
