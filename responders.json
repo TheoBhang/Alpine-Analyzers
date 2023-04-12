@@ -1,0 +1,3631 @@
+[
+  {
+    "name": "AMPforEndpoints_IsolationStart",
+    "version": "1.0",
+    "author": "Cisco Security",
+    "url": "https://github.com/CiscoSecurity",
+    "license": "MIT",
+    "description": "Start host isolation for an AMP for Endpoints connector",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "AMPforEndpoints",
+    "config": {
+      "service": "isolationstart"
+    },
+    "configurationItems": [
+      {
+        "name": "amp_cloud",
+        "description": "FQDN of the AMP for Endpoints cloud to interact with",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_id",
+        "description": "Client ID for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "API Key for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "unlock_code",
+        "description": "Custom unlock code used to stop isolation from the endpoint (Maximum 24 characters)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/ampforendpoints_isolationstart_alpine:1"
+  }
+  ,
+  {
+    "name": "AMPforEndpoints_IsolationStop",
+    "version": "1.0",
+    "author": "Cisco Security",
+    "url": "https://github.com/CiscoSecurity",
+    "license": "MIT",
+    "description": "Stop host isolation for an AMP for Endpoints connector",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "AMPforEndpoints",
+    "config": {
+      "service": "isolationstop"
+    },
+    "configurationItems": [
+      {
+        "name": "amp_cloud",
+        "description": "FQDN of the AMP for Endpoints cloud to interact with",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_id",
+        "description": "Client ID for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "API Key for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/ampforendpoints_isolationstop_alpine:1"
+  }
+  ,
+  {
+    "name": "AMPforEndpoints_MoveGUID",
+    "version": "1.0",
+    "author": "Cisco Security",
+    "url": "https://github.com/CiscoSecurity",
+    "license": "MIT",
+    "description": "Move an AMP for Endpoints connector GUID to a different Group",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "AMPforEndpoints",
+    "config": {
+      "service": "moveguid"
+    },
+    "configurationItems": [
+      {
+        "name": "amp_cloud",
+        "description": "FQDN of the AMP for Endpoints cloud to interact with",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_id",
+        "description": "Client ID for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "API Key for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "group_guid",
+        "description": "AMP for Endpoints Group GUID for the group connectors will be moved to",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/ampforendpoints_moveguid_alpine:1"
+  }
+  ,
+  {
+    "name": "AMPforEndpoints_SCDAdd",
+    "version": "1.0",
+    "author": "Cisco Security",
+    "url": "https://github.com/CiscoSecurity",
+    "license": "MIT",
+    "description": "Add a SHA256 to an AMP for Endpoints Simple Custom Detection list",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "AMPforEndpoints",
+    "config": {
+      "service": "scdadd"
+    },
+    "configurationItems": [
+      {
+        "name": "amp_cloud",
+        "description": "FQDN of the AMP for Endpoints cloud to interact with",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_id",
+        "description": "Client ID for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "API Key for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "scd_guid",
+        "description": "AMP for Endpoints Simple Custom Detection GUID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/ampforendpoints_scdadd_alpine:1"
+  }
+  ,
+  {
+    "name": "AMPforEndpoints_SCDRemove",
+    "version": "1.0",
+    "author": "Cisco Security",
+    "url": "https://github.com/CiscoSecurity",
+    "license": "MIT",
+    "description": "Remove a SHA256 to an AMP for Endpoints Simple Custom Detection list",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "AMPforEndpoints",
+    "config": {
+      "service": "scdremove"
+    },
+    "configurationItems": [
+      {
+        "name": "amp_cloud",
+        "description": "FQDN of the AMP for Endpoints cloud to interact with",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_id",
+        "description": "Client ID for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "API Key for AMP for Endpoints",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "scd_guid",
+        "description": "AMP for Endpoints Simple Custom Detection GUID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/ampforendpoints_scdremove_alpine:1"
+  }
+  ,
+  {
+    "name": "AzureTokenRevoker",
+    "version": "1.0",
+    "author": "Daniel Weiner @dmweiner",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Revoke all Microsoft Azure authentication session tokens for a list of User Principal Names",
+    "dataTypeList": [
+      "thehive:case"
+    ],
+    "baseConfig": "AzureTokenRevoker",
+    "configurationItems": [
+      {
+        "name": "redirect_uri",
+        "description": "Azure AD Application URI (Example: https://login.microsoftonline.com/TENANTIDHERE/oauth2/token)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_id",
+        "description": "Client ID/Application ID of Azure AD Registered App",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "client_secret",
+        "description": "Secret for Azure AD Registered Application",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/azure_token_revoker_alpine:1"
+  }
+  ,
+  {
+    "name": "CheckPoint_Lock",
+    "version": "1.0",
+    "author": "@dadokkio LDO-CERT",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Lock ip on CheckPoint Gaia",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "CheckPoint",
+    "config": {
+      "service": "lock"
+    },
+    "configurationItems": [
+      {
+        "name": "server",
+        "description": "Checkpoint API server",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "username",
+        "description": "CheckPoint username",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "password",
+        "description": "CheckPoint password",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "group_name",
+        "description": "CheckPoint group name ip will be added/removed from",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "exclusions",
+        "description": "ip/subnet that cannot be locked or unlocked",
+        "type": "string",
+        "multi": true,
+        "required": false
+      },
+      {
+        "name": "added_tag",
+        "description": "Tag added to observable when adding to FW",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "removed_tag",
+        "description": "Tag added to observable when removing from FW",
+        "type": "string",
+        "multi": false,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/checkpoint_lock_alpine:1"
+  }
+  ,
+  {
+    "name": "CheckPoint_Unlock",
+    "version": "1.0",
+    "author": "@dadokkio LDO-CERT",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Unlock ip on CheckPoint Gaia",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "CheckPoint",
+    "config": {
+      "service": "unlock"
+    },
+    "configurationItems": [
+      {
+        "name": "server",
+        "description": "Checkpoint API server",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "username",
+        "description": "CheckPoint username",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "password",
+        "description": "CheckPoint password",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "group_name",
+        "description": "CheckPoint group name ip will be added/removed from",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "exclusions",
+        "description": "ip/subnet that cannot be locked or unlocked",
+        "type": "string",
+        "multi": true,
+        "required": false
+      },
+      {
+        "name": "added_tag",
+        "description": "Tag added to observable when adding to FW",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "removed_tag",
+        "description": "Tag added to observable when removing from FW",
+        "type": "string",
+        "multi": false,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/checkpoint_unlock_alpine:1"
+  }
+  ,
+  {
+    "name": "DNS-RPZ",
+    "version": "1.0",
+    "author": "Michael Hornung; Expeditors International of Washington, Inc.",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add a dynamic DNS entry to a Response Policy Zone, blackholing or redirecting a FQDN.",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "DNS-RPZ",
+    "config": {
+      "max_tlp": 3,
+      "check_tlp": false,
+      "max_pap": 3,
+      "check_pap": true
+    },
+    "configurationItems": [
+      {
+        "name": "bind_server",
+        "description": "IP or FQDN of RPZ master BIND server",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "127.0.0.1"
+      },
+      {
+        "name": "tsig_keyname",
+        "description": "Name of TSIG key to access BIND server",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "cortex."
+      },
+      {
+        "name": "tsig_keyval",
+        "description": "TSIG key value to access BIND server",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "updateme"
+      },
+      {
+        "name": "tsig_hashalg",
+        "description": "TSIG hash algorithm to use",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "HMAC-SHA512"
+      },
+      {
+        "name": "rpz_zonename",
+        "description": "Fully qualified RPZ zone name (don't forget the trailing dot)",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "rpz."
+      },
+      {
+        "name": "remediation_ip",
+        "description": "IP to resolve RPZ names to",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "127.0.0.1"
+      }
+    ],
+    "dockerImage": "theobhang/dns_rpz_alpine:1"
+  }
+  ,
+  {
+    "name": "DomainToolsIris_AddRiskyDNSTag",
+    "version": "1.0",
+    "author": "DomainTools",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add Tag saying that the case contains a risky DNS.",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "DomainToolsIris",
+    "configurationItems": [
+      {
+        "name": "high_risk_threshold",
+        "description": "Risk score threshold to be considered high risk.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 70
+      }
+    ],
+    "dockerImage": "theobhang/domaintoolsiris_add_risky_dns_tag_alpine:1"
+  }
+  ,
+  {
+    "name": "DomainToolsIris_CheckMaliciousTags",
+    "version": "1.0",
+    "author": "DomainTools",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add Tag saying that the observable and case have a malicious tag in their Iris Tags.",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "DomainToolsIris",
+    "configurationItems": [
+      {
+        "name": "monitored_iris_tags",
+        "description": "Monitored Iris tags.",
+        "type": "string",
+        "multi": true,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/domaintoolsiris_check_malicious_tags_alpine:1"
+  }
+  ,
+  {
+    "name": "DuoLockUserAccount",
+    "version": "1.0",
+    "author": "Sven Kutzer / Gyorgy Acs, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Lock User Account in Duo Security via AdminAPI (The user will not be able to log in)",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Duo_Security_main",
+    "configurationItems": [
+      {
+        "name": "API_hostname",
+        "description": "Duo Admin API hostname, api-XXXXXXXX.duosecurity.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Integration_Key",
+        "description": "Integration Key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Secret_Key",
+        "description": "Secret Key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/duo_lock_user_account_alpine:1"
+  }
+  ,
+  {
+    "name": "DuoUnlockUserAccount",
+    "version": "1.0",
+    "author": "Sven Kutzer / Gyorgy Acs, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Unlock User Account in Duo Security via AdminAPI (The user must complete secondary authentication)",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Duo_Security_main",
+    "configurationItems": [
+      {
+        "name": "API_hostname",
+        "description": "Duo Admin API hostname, api-XXXXXXXX.duosecurity.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Integration_Key",
+        "description": "Integration Key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Secret_Key",
+        "description": "Secret Key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/duo_unlock_user_account_alpine:1"
+  }
+  ,
+  {
+    "name": "Crowdstrike_Falcon_Custom_IOC_API",
+    "version": "1.0",
+    "author": "Michael",
+    "url": "https://www.crowdstrike.com/blog/tech-center/import-iocs-crowdstrike-falcon-host-platform-via-api/",
+    "license": "MIT",
+    "description": "Submit observables to the Crowdstrike Falcon Custom IOC api",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "FalconCustomIOC",
+    "configurationItems": [
+      {
+        "name": "falconapi_url",
+        "description": "Crowdstrike Falcon host url",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "falconapi_user",
+        "description": "Crowdstrike Falcon query api user",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "falconapi_key",
+        "description": "Crowdstrike Falcon query api key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/falcon_custom_ioc_alpine:1"
+  }
+  ,
+  {
+    "name": "Gmail_BlockDomain",
+    "version": "1.0",
+    "author": "David Strassegger, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "MIT",
+    "description": "Move emails from a given domain to trash",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Gmail",
+    "config": {
+      "service": "blockdomain",
+      "max_tlp": 2,
+      "check_tlp": false,
+      "max_pap": 2,
+      "check_pap": true
+    },
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "URL for thehive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api_key",
+        "description": "API key for TheHive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_domain",
+        "description": "Gsuite Domain",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_project_id",
+        "description": "GCP Project ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key_id",
+        "description": "Service account private key id",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key",
+        "description": "Service Account private key (PEM Format)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_email",
+        "description": "Service Account E-Mail address",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_id",
+        "description": "OAuth Client ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/gmail_blockdomain_alpine:1"
+  }
+  ,
+  {
+    "name": "Gmail_BlockSender",
+    "version": "1.0",
+    "author": "David Strassegger, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "MIT",
+    "description": "Move emails from a given sender to trash",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Gmail",
+    "config": {
+      "service": "blocksender",
+      "max_tlp": 2,
+      "check_tlp": false,
+      "max_pap": 2,
+      "check_pap": true
+    },
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "URL for thehive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api_key",
+        "description": "API key for TheHive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_domain",
+        "description": "Gsuite Domain",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_project_id",
+        "description": "GCP Project ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key_id",
+        "description": "Service account private key id",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key",
+        "description": "Service Account private key (PEM Format)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_email",
+        "description": "Service Account E-Mail address",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_id",
+        "description": "OAuth Client ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/gmail_blocksender_alpine:1"
+  }
+  ,
+  {
+    "name": "Gmail_DeleteMessage",
+    "version": "1.0",
+    "author": "David Strassegger, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "MIT",
+    "description": "Move a given message into the trash folder",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Gmail",
+    "config": {
+      "service": "deletemessage",
+      "max_tlp": 2,
+      "check_tlp": false,
+      "max_pap": 2,
+      "check_pap": true
+    },
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "URL for thehive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api_key",
+        "description": "API key for TheHive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_domain",
+        "description": "Gsuite Domain",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_project_id",
+        "description": "GCP Project ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key_id",
+        "description": "Service account private key id",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key",
+        "description": "Service Account private key (PEM Format)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_email",
+        "description": "Service Account E-Mail address",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_id",
+        "description": "OAuth Client ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/gmail_deletemessage_alpine:1"
+  }
+  ,
+  {
+    "name": "Gmail_UnblockDomain",
+    "version": "1.0",
+    "author": "David Strassegger, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "MIT",
+    "description": "Remove a message filter for a given domain",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Gmail",
+    "config": {
+      "service": "unblockdomain",
+      "max_tlp": 2,
+      "check_tlp": false,
+      "max_pap": 2,
+      "check_pap": true
+    },
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "URL for thehive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api_key",
+        "description": "API key for TheHive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_domain",
+        "description": "Gsuite Domain",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_project_id",
+        "description": "GCP Project ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key_id",
+        "description": "Service account private key id",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key",
+        "description": "Service Account private key (PEM Format)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_email",
+        "description": "Service Account E-Mail address",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_id",
+        "description": "OAuth Client ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/gmail_unblockdomain_alpine:1"
+  }
+  ,
+  {
+    "name": "Gmail_UnblockSender",
+    "version": "1.0",
+    "author": "David Strassegger, @oscd_initiative",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "MIT",
+    "description": "Remove a message filter for a given sender",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Gmail",
+    "config": {
+      "service": "unblocksender",
+      "max_tlp": 2,
+      "check_tlp": false,
+      "max_pap": 2,
+      "check_pap": true
+    },
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "URL for thehive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_api_key",
+        "description": "API key for TheHive instance",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_domain",
+        "description": "Gsuite Domain",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_project_id",
+        "description": "GCP Project ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key_id",
+        "description": "Service account private key id",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_private_key",
+        "description": "Service Account private key (PEM Format)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_email",
+        "description": "Service Account E-Mail address",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "gmail_client_id",
+        "description": "OAuth Client ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/gmail_unblocksender_alpine:1"
+  }
+  ,
+  {
+    "name": "KnowBe4",
+    "version": "1.0",
+    "author": "Kyle Parrish",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add 'Clicked Event' to User via User Events API.",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "KnowBe4",
+    "configurationItems": [
+      {
+        "name": "api_url",
+        "description": "Base API url",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.events.knowbe4.com/events"
+      },
+      {
+        "name": "hive_url",
+        "description": "Specify The Hive Instance URL",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "Api Key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "required_tag",
+        "description": "Specify a tag that must be present for responder to run.",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "event_type",
+        "description": "Specify the Event Type for the new event. https://developer.knowbe4.com/events/#tag/Event-Types",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "risk_level",
+        "description": "Specify the desired risk level. https://developer.knowbe4.com/events/#tag/Events/paths/~1events/post",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 10
+      }
+    ],
+    "dockerImage": "theobhang/knowbe4_alpine:1"
+  }
+  ,
+  {
+    "name": "MSDefender-IsolateMachine",
+    "version": "1.0",
+    "author": "Keijo Korte",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Isolate machine with Microsoft Defender for Endpoints",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderforEndpoints",
+    "config": {
+      "service": "isolateMachine"
+    },
+    "configurationItems": [
+      {
+        "name": "tenantId",
+        "description": "Azure tenant ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appId",
+        "description": "Azure app ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appSecret",
+        "description": "Azure app secret",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890="
+      },
+      {
+        "name": "resourceAppIdUri",
+        "description": "Security Center URI, usually doens't need to change",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.securitycenter.windows.com"
+      },
+      {
+        "name": "oAuthUri",
+        "description": "Azure oAuth2 authentication endpoint",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://login.windows.net/"
+      }
+    ],
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://securitycenter.windows.com",
+    "dockerImage": "theobhang/msdefender-isolatemachine_alpine:1"
+  }
+  ,
+  {
+    "name": "MSDefender-PushIOC-Alert",
+    "version": "1.0",
+    "author": "Keijo Korte",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Push IOC to Defender client. Alert mode",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderforEndpoints",
+    "config": {
+      "service": "pushIOCAlert"
+    },
+    "configurationItems": [
+      {
+        "name": "tenantId",
+        "description": "Azure tenant ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appId",
+        "description": "Azure app ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appSecret",
+        "description": "Azure app secret",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890="
+      },
+      {
+        "name": "resourceAppIdUri",
+        "description": "Security Center URI, usually doens't need to change",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.securitycenter.windows.com"
+      },
+      {
+        "name": "oAuthUri",
+        "description": "Azure oAuth2 authentication endpoint",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://login.windows.net/"
+      }
+    ],
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://securitycenter.windows.com",
+    "dockerImage": "theobhang/msdefender-pushioc-alert_alpine:1"
+  }
+  ,
+  {
+    "name": "MSDefender-PushIOC-Block",
+    "version": "1.0",
+    "author": "Keijo Korte",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Push IOC to Defender client. Blocking mode",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderforEndpoints",
+    "config": {
+      "service": "pushIOCBlock"
+    },
+    "configurationItems": [
+      {
+        "name": "tenantId",
+        "description": "Azure tenant ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appId",
+        "description": "Azure app ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appSecret",
+        "description": "Azure app secret",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890="
+      },
+      {
+        "name": "resourceAppIdUri",
+        "description": "Security Center URI, usually doens't need to change",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.securitycenter.windows.com"
+      },
+      {
+        "name": "oAuthUri",
+        "description": "Azure oAuth2 authentication endpoint",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://login.windows.net/"
+      }
+    ],
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://securitycenter.windows.com",
+    "dockerImage": "theobhang/msdefender-pushioc-block_alpine:1"
+  }
+  ,
+  {
+    "name": "MSDefender-UnisolateMachine",
+    "version": "1.0",
+    "author": "Keijo Korte",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Unisolate machine with Microsoft Defender for Endpoints",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderforEndpoints",
+    "config": {
+      "service": "unisolateMachine"
+    },
+    "configurationItems": [
+      {
+        "name": "tenantId",
+        "description": "Azure tenant ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appId",
+        "description": "Azure app ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appSecret",
+        "description": "Azure app secret",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890="
+      },
+      {
+        "name": "resourceAppIdUri",
+        "description": "Security Center URI, usually doens't need to change",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.securitycenter.windows.com"
+      },
+      {
+        "name": "oAuthUri",
+        "description": "Azure oAuth2 authentication endpoint",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://login.windows.net/"
+      }
+    ],
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://securitycenter.windows.com",
+    "dockerImage": "theobhang/msdefender-unisolatemachine_alpine:1"
+  }
+  ,
+  {
+    "name": "MSDefender-FullVirusscan",
+    "version": "1.0",
+    "author": "Keijo Korte",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Run full virus scan to machine with Microsoft Defender for Endpoints",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderforEndpoints",
+    "config": {
+      "service": "runFullVirusScan"
+    },
+    "configurationItems": [
+      {
+        "name": "tenantId",
+        "description": "Azure tenant ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appId",
+        "description": "Azure app ID",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "abcdef12-ab12-abc12-ab12-abcdef123456"
+      },
+      {
+        "name": "appSecret",
+        "description": "Azure app secret",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890="
+      },
+      {
+        "name": "resourceAppIdUri",
+        "description": "Security Center URI, usually doens't need to change",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.securitycenter.windows.com"
+      },
+      {
+        "name": "oAuthUri",
+        "description": "Azure oAuth2 authentication endpoint",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://login.windows.net/"
+      }
+    ],
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://securitycenter.windows.com",
+    "dockerImage": "theobhang/msdefender-fullvirusscan_alpine:1"
+  }
+  ,
+  {
+    "name": "MSDefenderOffice365_block",
+    "version": "1.0",
+    "author": "Joe Lazaro",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add entries to the Tenant Allow/Block List in the Microsoft 365 Defender",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderOffice365",
+    "config": {
+      "service": "block"
+    },
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide",
+    "service_logo": {
+      "path": "assets/MicrosoftDefenderForOffice365_logo.png",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "assets/MSDefenderOffice365_Block.png",
+        "caption": "Example responder action result"
+      }
+    ],
+    "configurationItems": [
+      {
+        "name": "certificate_base64",
+        "description": "Base64-encoded PFX certificate to be used for certificate-based authentication.",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "certificate_password",
+        "description": "Password for the certificate used to authenticate",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "app_id",
+        "description": "The application ID of the service principal that's used in certificate based authentication",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "organization",
+        "description": "Tenant ID. Example: something.onmicrosoft.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "block_expiration_days",
+        "description": "How many days out should we set the expiration? A value <= 0 means to set no expiration.",
+        "type": "number",
+        "multi": false,
+        "required": true,
+        "defaultValue": 0
+      }
+    ],
+    "dockerImage": "docker.io/cortexneurons/msdefenderoffice365_block:1"
+  }
+  ,
+  {
+    "name": "MSDefenderOffice365_unblock",
+    "version": "1.0",
+    "author": "Joe Lazaro",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add entries to the Tenant Allow/Block List in the Microsoft 365 Defender",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "MSDefenderOffice365",
+    "config": {
+      "service": "unblock"
+    },
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide",
+    "service_logo": {
+      "path": "assets/MicrosoftDefenderForOffice365_logo.png",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "assets/MSDefenderOffice365_Block.png",
+        "caption": "Example responder action result"
+      }
+    ],
+    "configurationItems": [
+      {
+        "name": "certificate_base64",
+        "description": "Base64-encoded PFX certificate to be used for certificate-based authentication.",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "certificate_password",
+        "description": "Password for the certificate used to authenticate",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "app_id",
+        "description": "The application ID of the service principal that's used in certificate based authentication",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "organization",
+        "description": "Tenant ID. Example: something.onmicrosoft.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "docker.io/cortexneurons/msdefenderoffice365_unblock:1"
+  }
+  ,
+  {
+    "name": "MailIncidentStatus",
+    "version": "1.0",
+    "author": "Manuel Krucker",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Mail a detailed status information of an incident case. The mail is sent to recipients specified by tags prefixed with 'mail='. The responder respects tlp definitions. For tlp:amber mail addresse and for tlp:green mail domains must be pre-defined in the configuration. For tlp:red sending mails is denied. The responser also uses thehive4py to collect information about the status of the tasks of the incidents.",
+    "dataTypeList": [
+      "thehive:case"
+    ],
+    "baseConfig": "MailIncidentStatus",
+    "configurationItems": [
+      {
+        "name": "from",
+        "description": "email address from which the mail is send",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "smtp_host",
+        "description": "SMTP server used to send mail",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "localhost"
+      },
+      {
+        "name": "smtp_port",
+        "description": "SMTP server port",
+        "type": "number",
+        "multi": false,
+        "required": true,
+        "defaultValue": 25
+      },
+      {
+        "name": "smtp_user",
+        "description": "SMTP server user",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "user"
+      },
+      {
+        "name": "smtp_pwd",
+        "description": "SMTP server password",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "pwd"
+      },
+      {
+        "name": "mail_subject_prefix",
+        "description": "Prefix of the mail subject",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "Incident Case Notification: "
+      },
+      {
+        "name": "mail_html_style_tag_content",
+        "description": "The css content of the style tag for the HTML mail body. Define table, th, hd, .first, and .second elements.",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "table { border: 1px solid black; border-collapse: collapse; text-align: left; vertical-align: top; th { border: 1px solid black; border-collapse: collapse; text-align: left;} td { border: 1px solid black; border-collapse: collapse; text-align: left;} .first { width: 150px; min-width: 150px; max-width: 150px; background-color: #ffe8d4; } .second { background-color: #d7d9f2;}"
+      },
+      {
+        "name": "tlp_amber_mail_addresses",
+        "description": "Mail addresses which are allowed to receive tlp:amber classified incidents",
+        "type": "string",
+        "multi": true,
+        "required": false
+      },
+      {
+        "name": "tlp_green_mail_domains",
+        "description": "Mail domains which are allowed to receive tlp:green classified incidents",
+        "type": "string",
+        "multi": true,
+        "required": false
+      },
+      {
+        "name": "thehive_url",
+        "description": "URL pointing to your TheHive installation, e.g. 'http://127.0.0.1:9000'",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_apikey",
+        "description": "TheHive API key which is used get tasks and other elements of the incident",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/mail_incident_status_alpine:1"
+  }
+  ,
+  {
+    "name": "Mailer",
+    "version": "1.0",
+    "author": "CERT-BDF",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Send an email with information from a TheHive case or alert",
+    "dataTypeList": [
+      "thehive:case",
+      "thehive:alert",
+      "thehive:case_task"
+    ],
+    "baseConfig": "Mailer",
+    "configurationItems": [
+      {
+        "name": "from",
+        "description": "email address from which the mail is send",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "smtp_host",
+        "description": "SMTP server used to send mail",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "localhost"
+      },
+      {
+        "name": "smtp_port",
+        "description": "SMTP server port",
+        "type": "number",
+        "multi": false,
+        "required": true,
+        "defaultValue": 25
+      },
+      {
+        "name": "smtp_user",
+        "description": "SMTP server user",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "user"
+      },
+      {
+        "name": "smtp_pwd",
+        "description": "SMTP server password",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "pwd"
+      }
+    ],
+    "dockerImage": "theobhang/mailer_alpine:1"
+  }
+  ,
+  {
+    "name": "Minemeld",
+    "version": "1.0",
+    "author": "Wes Lambert, Security Onion Solutions",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Submit indicator to Minemeld",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Minemeld",
+    "configurationItems": [
+      {
+        "name": "minemeld_url",
+        "description": "URL for Minemeld instance",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://x.x.x.x"
+      },
+      {
+        "name": "minemeld_user",
+        "description": "User for Minemeld",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "apiuser"
+      },
+      {
+        "name": "minemeld_password",
+        "description": "Password for Minemeld",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "password"
+      },
+      {
+        "name": "minemeld_indicator_list",
+        "description": "Name of indicator list to which indicators will be added",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "my_block_list"
+      },
+      {
+        "name": "minemeld_share_level",
+        "description": "Share level for indicator",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "red"
+      },
+      {
+        "name": "minemeld_confidence",
+        "description": "Confidence level for indicator",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "100"
+      },
+      {
+        "name": "minemeld_ttl",
+        "description": "TTL for indicator",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "86400"
+      }
+    ],
+    "registration_required": false,
+    "subscription_required": false,
+    "free_subscription": false,
+    "service_homepage": "https://github.com/PaloAltoNetworks/minemeld",
+    "service_logo": {
+      "path": "assets/MM-logo.png",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "",
+        "caption": ""
+      }
+    ],
+    "dockerImage": "theobhang/minemeld_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoCortexXDR_isolate",
+    "version": "1.0",
+    "author": "Joe Lazaro",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Isolate endpoints identified by hostname or IP list",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "PaloAltoCortexXDR",
+    "config": {
+      "service": "isolate"
+    },
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
+    "service_logo": {
+      "path": "assets/cortex_logo.png",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "assets/PaloAltoCortexXDR_isolate.png",
+        "caption": "Example responder action result"
+      }
+    ],
+    "configurationItems": [
+      {
+        "name": "api_key",
+        "description": "API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key_id",
+        "description": "API key ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "advanced_security",
+        "description": "Set True if the API key was generated with Advanced security level. False for a Standard security key.",
+        "type": "boolean",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_host",
+        "description": "Fully qualified domain name for the API host. Example: api-example.xdr.us.paloaltonetworks.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "isolate_polling_interval",
+        "description": "Interval, in seconds between requests for isolate or unisolate actions.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 30
+      },
+      {
+        "name": "isolate_max_polling_retries",
+        "description": "Maximum number of time to retry action status when the isolate or unisolate action is still in progress.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 120
+      },
+      {
+        "name": "allow_multiple_isolation_targets",
+        "description": "Allow the responder to send multiple targets for isolation/unisolation in one multi-line observable. Set to false as a safety mechanism to allow only a single endpoint to be affected while refusing requests to operate on multiple endpoints.",
+        "type": "boolean",
+        "multi": false,
+        "required": true,
+        "defaultValue": false
+      }
+    ],
+    "dockerImage": "theobhang/paloaltocortexxdr_isolate_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoCortexXDR_scan",
+    "version": "1.0",
+    "author": "Joe Lazaro",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Scan endpoints identified by hostname or IP list",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "PaloAltoCortexXDR",
+    "config": {
+      "service": "scan"
+    },
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
+    "service_logo": {
+      "path": "assets/cortex_logo.png",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "assets/PaloAltoCortexXDR_isolate.png",
+        "caption": "Example responder action result"
+      }
+    ],
+    "configurationItems": [
+      {
+        "name": "api_key",
+        "description": "API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key_id",
+        "description": "API key ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "advanced_security",
+        "description": "Set True if the API key was generated with Advanced security level. False for a Standard security key.",
+        "type": "boolean",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_host",
+        "description": "Fully qualified domain name for the API host. Example: api-example.xdr.us.paloaltonetworks.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "scan_polling_interval",
+        "description": "Interval, in seconds between requests for scan actions.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 60
+      },
+      {
+        "name": "scan_max_polling_retries",
+        "description": "Maximum number of time to retry action status when a scan action is still in progress.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 240
+      }
+    ],
+    "dockerImage": "theobhang/paloaltocortexxdr_scan_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoCortexXDR_unisolate",
+    "version": "1.0",
+    "author": "Joe Lazaro",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Unisolate endpoints identified by hostname or IP list",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "PaloAltoCortexXDR",
+    "config": {
+      "service": "unisolate"
+    },
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
+    "service_logo": {
+      "path": "assets/cortex_logo.png",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "assets/PaloAltoCortexXDR_isolate.png",
+        "caption": "Example responder action result"
+      }
+    ],
+    "configurationItems": [
+      {
+        "name": "api_key",
+        "description": "API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key_id",
+        "description": "API key ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "advanced_security",
+        "description": "Set True if the API key was generated with Advanced security level. False for a Standard security key.",
+        "type": "boolean",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_host",
+        "description": "Fully qualified domain name for the API host. Example: api-example.xdr.us.paloaltonetworks.com",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "isolate_polling_interval",
+        "description": "Interval, in seconds between requests for isolate or unisolate actions.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 30
+      },
+      {
+        "name": "isolate_max_polling_retries",
+        "description": "Maximum number of time to retry action status when the isolate or unisolate action is still in progress.",
+        "type": "number",
+        "multi": false,
+        "required": false,
+        "defaultValue": 120
+      },
+      {
+        "name": "allow_multiple_isolation_targets",
+        "description": "Allow the responder to send multiple targets for isolation/unisolation in one multi-line observable. Set to false as a safety mechanism to allow only a single endpoint to be affected while refusing requests to operate on multiple endpoints.",
+        "type": "boolean",
+        "multi": false,
+        "required": true,
+        "defaultValue": false
+      }
+    ],
+    "dockerImage": "theobhang/paloaltocortexxdr_unisolate_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_external_IP_address",
+    "version": "2.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block external IP address",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_external_IP_address",
+        "description": "Name external name security rule for IP address",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block external IP address"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_external_ip_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_external_domain",
+    "version": "2.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block external domain",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_external_domain",
+        "description": "Name external security rule for domains",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block external Domain"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_external_domain_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_external_user",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block external user",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_external_user",
+        "description": "Name security rule for external users",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block external user"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_external_user_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_internal_IP_address",
+    "version": "2.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block internal IP address",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_internal_IP_address",
+        "description": "Name internal security rule for IP address",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block internal IP address"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_internal_ip_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_internal_domain",
+    "version": "2.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block internal domain",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_internal_domain",
+        "description": "Name internal security rule for domains",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block internal Domain"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_internal_domain_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_internal_user",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block internal user",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_internal_user",
+        "description": "Name internal security rule for users",
+        "type": "string",
+        "multi": false,
+        "required": false,
+        "defaultValue": "TheHive Block internal user"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_internal_user_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_port_for_external_communication",
+    "version": "2.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block external port communication",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_port_external_communication",
+        "description": "Name external security rule for port communications",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block port for external communication"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_port_for_ext_com_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_block_port_for_internal_communication",
+    "version": "2.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Block internal port communication",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_port_internal_communication",
+        "description": "Name internal security rule for port communications",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block port for internal communication"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_block_port_for_int_com_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_external_IP_address",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock external ip",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Address_group_for_external_IP_address",
+        "description": "Name external Address Group for IP address",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block list external IP address"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_external_ip_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_external_domain",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock external domain",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Address_group_for_unblock_external_domain",
+        "description": "Name external Address Group for domains",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block list external domain"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_external_domain_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_external_user",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock external user",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_external_user",
+        "description": "Name security rule for external users",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block external user"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_external_user_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_internal_IP_address",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock internal ip",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Address_group_for_internal_IP_address",
+        "description": "Name internal Address Group for IP address",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block list internal IP address"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_internal_ip_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_internal_domain",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock internal domain",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Address_group_for_unblock_internal_domain",
+        "description": "Name internal Address Group for domains",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block list internal domain"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_internal_domain_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_internal_user",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock internal user",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Security_rule_for_block_internal_user",
+        "description": "Name security rule for internal users",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block internal user"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_internal_user_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_port_for_external_communication",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock external port communication",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Service_group_for_external_port_communication",
+        "description": "Name external Service Group for port communication",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block list for external port communication"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_port_for_ext_com_alpine:1"
+  }
+  ,
+  {
+    "name": "PaloAltoNGFW_unblock_port_for_internal_communication",
+    "version": "1.0.0",
+    "author": "Maxim Konakin, OSCD Initiative",
+    "url": "https://www.paloaltonetworks.com/",
+    "license": "AGPL-V3",
+    "description": "Unblock internal port communication",
+    "dataTypeList": [
+      "thehive:alert",
+      "thehive:case_artifact",
+      "thehive:case"
+    ],
+    "baseConfig": "PaloAltoNGFW_main",
+    "configurationItems": [
+      {
+        "name": "Hostname_PaloAltoNGFW",
+        "description": "Hostname PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "User_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Password_PaloAltoNGFW",
+        "description": "User PaloAltoNGFW",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Service_group_for_internal_port_communication",
+        "description": "Name internal Service Group for port communication",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "TheHive Block list for internal port communication"
+      },
+      {
+        "name": "TheHive_instance",
+        "description": "URL of the TheHive instance to query",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "TheHive_API_key",
+        "description": "TheHive API key with read access",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/paloalto_ngfw_unblock_port_for_int_com_alpine:1"
+  }
+  ,
+  {
+    "name": "QRadar_Auto_Closing_Offense",
+    "version": "1.0",
+    "author": "Florian Perret",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Closing the QRadar Offense associated to your case in one clic !",
+    "dataTypeList": [
+      "thehive:case"
+    ],
+    "baseConfig": "QRadarAutoClose",
+    "configurationItems": [
+      {
+        "name": "QRadar_API_Key",
+        "description": "A QRadar API key with sufficent rights to close an offense",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "QRadar_Url",
+        "description": "URL of your QRadar API, must be accessible from Cortex server. eg: myqradar.myorg.com/api/siem/offenses",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Cert_Path",
+        "description": "If you need a certificate to authentificate to your QRadar API, please provide the path here",
+        "type": "string",
+        "multi": false,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/qradar_auto_close_alpine:1"
+  }
+  ,
+  {
+    "name": "RT4-CreateTicket",
+    "version": "1.0",
+    "author": "Michael Davis, REN-ISAC",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers/tree/master/responders/RT4",
+    "license": "MIT",
+    "description": "Cortex Responder to create a ticket in RT4 from TheHive observables or alerts",
+    "dataTypeList": [
+      "thehive:case_artifact",
+      "thehive:alert",
+      "thehive:case"
+    ],
+    "baseConfig": "RT4",
+    "configurationItems": [
+      {
+        "name": "server",
+        "description": "RT4 Base URL, e.g., https://rt.domain.local",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "username",
+        "description": "RT4 username for authentication",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "password",
+        "description": "RT4 password for user account",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "Queue",
+        "description": "Default queue in which to create new tickets",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "General"
+      },
+      {
+        "name": "Owner",
+        "description": "Default owner to assign newly created tickets (optional)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "Status",
+        "description": "Default ticket status to assign newly created tickets (optional)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "custom_field_list",
+        "description": "Name:Value of Custom Fields in RT to set on every ticket created (e.g.: 'How Reported:TheHive' sets CF.{How Reported} = TheHive on every new ticket)",
+        "type": "string",
+        "multi": true,
+        "required": false
+      },
+      {
+        "name": "tag_to_template_map",
+        "description": "Mapping table of tags to templates (e.g.: 'phishing:phish_letter' maps anything tagged as 'phishing' to the 'phish_letter' template)",
+        "type": "string",
+        "multi": true,
+        "required": true
+      },
+      {
+        "name": "thehive_cf_rtticket",
+        "description": "Name of a case custom field in TheHive in which RT ticket #s will be saved upon successful case-level Responder run (optional)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "thehive_url",
+        "description": "TheHive Base URL, e.g., https://thehive.domain.local:9000 (optional: only needed to process Cases)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "thehive_token",
+        "description": "TheHive API token for authentication (optional: only needed to process Cases)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/rt4_alpine:1"
+  }
+  ,
+  {
+    "name": "Redmine_Issue",
+    "version": "1.0",
+    "author": "Marc-André DOLL",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Create a redmine issue from a case",
+    "dataTypeList": [
+      "thehive:case",
+      "thehive:case_task"
+    ],
+    "baseConfig": "Redmine",
+    "configurationItems": [
+      {
+        "name": "instance_name",
+        "description": "Name of the Redmine instance",
+        "multi": false,
+        "required": false,
+        "type": "string",
+        "defaultValue": "redmine"
+      },
+      {
+        "name": "url",
+        "description": "URL where to find the Redmine API",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "username",
+        "description": "Username to log into Redmine",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "password",
+        "description": "Password to log into Redmine",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "project_field",
+        "description": "Name of the custom field containing the Redmine project to use when creating the issue",
+        "multi": false,
+        "required": true,
+        "type": "string"
+      },
+      {
+        "name": "tracker_field",
+        "description": "Name of the custom field containing the Redmine tracker to use when creating the issue",
+        "multi": false,
+        "required": true,
+        "type": "string"
+      },
+      {
+        "name": "assignee_field",
+        "description": "Name of the custom field containing the Redmine assignee to use when creating the issue",
+        "multi": false,
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "reference_field",
+        "description": "Name of the case custom field in which to store the opened issue. If not defined, this information will not be stored",
+        "type": "string",
+        "required": false,
+        "multi": false
+      },
+      {
+        "name": "opening_status",
+        "description": "Status used when opening a Redmine issue (if not defined here, will use the default opening status from the Redmine Workflow)",
+        "type": "string",
+        "multi": false,
+        "required": false
+      },
+      {
+        "name": "closing_task",
+        "description": "Closing the task after successfully creating the Redmine issue",
+        "type": "boolean",
+        "multi": false,
+        "defaultValue": false,
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/redmine_alpine:1"
+  }
+  ,
+  {
+    "author": "RiskIQ",
+    "baseConfig": "RiskIQ",
+    "config": {
+      "service": "PushArtifactToProject"
+    },
+    "configurationItems": [
+      {
+        "description": "API username of the RiskIQ Illuminate or PassiveTotal account (usually an email address)",
+        "multi": false,
+        "name": "username",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "description": "API key of the RiskIQ Illuminate or PassiveTotal account",
+        "multi": false,
+        "name": "api_key",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "defaultValue": "analyst",
+        "description": "Visiblity for new RiskIQ Illuminate projects (analyst, team, or public).",
+        "multi": false,
+        "name": "project_visibility",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "defaultValue": "Hive:",
+        "description": "Prefix to add when auto-generating project names from case names.",
+        "multi": false,
+        "name": "project_prefix",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "description": "Tag to apply to artifact in TheHive when is has been pushed to a RiskIQ Illuminate Project (leave blank to skip tagging).",
+        "multi": false,
+        "name": "thehive_artifact_tag",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "description": "Tag to apply to artifact in RiskIQ Illuminate when is has been pushed to an Illuminate Project (leave blank to skip tagging).",
+        "multi": false,
+        "name": "riq_artifact_tag",
+        "required": false,
+        "type": "string"
+      }
+    ],
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "description": "Push a case to a RiskIQ Illuminate project.",
+    "license": "AGPL-V3",
+    "name": "RiskIQ_PushArtifactToProject",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "version": "1.0",
+    "dockerImage": "theobhang/riskiq_responder_alpine:1"
+  }
+  ,
+  {
+    "name": "SendGrid",
+    "version": "1.0",
+    "author": "Equate Technologies",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Send an email with information from a TheHive case or alert via SendGrid API over HTTPS",
+    "dataTypeList": [
+      "thehive:case",
+      "thehive:alert"
+    ],
+    "baseConfig": "SendGrid",
+    "configurationItems": [
+      {
+        "name": "from",
+        "description": "Email address to use as the From: field",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "description": "SendGrid API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/sendgrid_alpine:1"
+  }
+  ,
+  {
+    "name": "SentinelOne_Hash_Blacklister",
+    "version": "1.0",
+    "author": "Joe Vasquez",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add SHA1 hash to SentinelOne Blacklist via API v2.1.",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "config": {
+      "service": "s1_blacklist"
+    },
+    "baseConfig": "SentinelOne",
+    "configurationItems": [
+      {
+        "name": "s1_console_url",
+        "description": "Console URL",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "s1_api_key",
+        "description": "API Key, don't forget this will expire!",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "s1_account_id",
+        "description": "Account ID",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "s1_blacklist_ostype",
+        "description": "OS type, must be one of the following: macos, windows, linux, or windows_legacy.  Default is windows",
+        "type": "string",
+        "multi": false,
+        "default": "windows",
+        "required": false
+      }
+    ],
+    "dockerImage": "theobhang/sentinel_one_alpine:1"
+  }
+  ,
+  {
+    "name": "Shuffle",
+    "version": "1.0",
+    "author": "@frikkylikeme",
+    "url": "https://github.com/frikky/shuffle",
+    "license": "AGPL-V3",
+    "description": "Execute a workflow in Shuffle",
+    "dataTypeList": [
+      "thehive:case",
+      "thehive:alert"
+    ],
+    "baseConfig": "Shuffle",
+    "configurationItems": [
+      {
+        "name": "url",
+        "description": "The URL to your shuffle instance",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://shuffler.io"
+      },
+      {
+        "name": "api_key",
+        "description": "The API key to your Shuffle user",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "workflow_id",
+        "description": "The ID of the workflow to execute",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/shuffle_alpine:1"
+  }
+  ,
+  {
+    "name": "Umbrella_Blacklister",
+    "version": "1.1",
+    "author": "Kyle Parrish",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Add domain to Umbrella blacklist via Enforcement API.",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "UmbrellaBlacklister",
+    "configurationItems": [
+      {
+        "name": "integration_url",
+        "description": "Custom integration url",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/umbrella_blacklister_alpine:1"
+  }
+  ,
+  {
+    "name": "Velociraptor_Flow",
+    "version": "0.1",
+    "author": "Wes Lambert",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Run Velociraptor flow",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Velociraptor",
+    "configurationItems": [
+      {
+        "name": "velociraptor_client_config",
+        "description": "Path to API client config file",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": ""
+      },
+      {
+        "name": "velociraptor_artifact",
+        "description": "Artifact to collect",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": ""
+      },
+      {
+        "name": "upload_flow_results",
+        "description": "Upload the results of a flow as an observable",
+        "type": "boolean",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_url",
+        "description": "URL pointing to your TheHive installation, e.g. 'http://127.0.0.1:9000'",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_apikey",
+        "description": "TheHive API key (used to add the downloaded file back to the alert/case)",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "theobhang/velociraptor_alpine:1"
+  }
+  ,
+  {
+    "name": "Virustotal_Downloader",
+    "version": "0.1",
+    "author": "Mario Henkel @hariomenkel",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Download a file from Virustotal by its hash",
+    "dataTypeList": [
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "VirustotalDownloader",
+    "configurationItems": [
+      {
+        "name": "virustotal_apikey",
+        "description": "Virustotal API key which should be used to download files",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_url",
+        "description": "URL pointing to your TheHive installation, e.g. 'http://127.0.0.1:9000'",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "thehive_apikey",
+        "description": "TheHive API key which is used to add the downloaded file back to the alert/case",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "registration_required": true,
+    "subscription_required": true,
+    "free_subscription": false,
+    "service_homepage": "https://virustotal.com",
+    "service_logo": {
+      "path": "",
+      "caption": "logo"
+    },
+    "screenshots": [
+      {
+        "path": "",
+        "caption": ""
+      }
+    ],
+    "dockerImage": "theobhang/virustotal_downloader_alpine:1"
+  }
+  ,
+  {
+    "name": "Wazuh",
+    "version": "1.0",
+    "author": "Wes Lambert",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Block an IP on a host via Wazuh agent",
+    "dataTypeList": [
+      "thehive:case",
+      "thehive:case_artifact"
+    ],
+    "baseConfig": "Wazuh",
+    "configurationItems": [
+      {
+        "name": "wazuh_manager",
+        "description": "URL for Wazuh Manager",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://localhhost:55000"
+      },
+      {
+        "name": "wazuh_user",
+        "description": "User for Wazuh Manager",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "foo"
+      },
+      {
+        "name": "wazuh_password",
+        "description": "Password for Wazuh Manager",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "bar"
+      }
+    ],
+    "dockerImage": "theobhang/wazuh_alpine:1"
+  }
+  ,
+  {
+    "name": "ZEROFOX_Close_alert",
+    "version": "1.0",
+    "author": "TheHive-Project",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Close alert in Zerofox",
+    "dataTypeList": [
+      "thehive:case"
+    ],
+    "baseConfig": "ZEROFOX",
+    "configurationItems": [
+      {
+        "name": "url",
+        "description": "URL for Zerofox API",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.zerofox.com/1.0"
+      },
+      {
+        "name": "api",
+        "description": "Key API for Zerofox",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": ""
+      }
+    ],
+    "dockerImage": "theobhang/zerofox_close_alert_alpine:1"
+  }
+  ,
+  {
+    "name": "ZEROFOX_Takedown_request",
+    "version": "1.0",
+    "author": "TheHive-Project",
+    "url": "https://github.com/TheHive-Project/Cortex-Analyzers",
+    "license": "AGPL-V3",
+    "description": "Request for a takedown regarding the alert in Zerofox",
+    "dataTypeList": [
+      "thehive:case"
+    ],
+    "baseConfig": "ZEROFOX",
+    "configurationItems": [
+      {
+        "name": "url",
+        "description": "URL for Zerofox API",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": "https://api.zerofox.com/1.0"
+      },
+      {
+        "name": "api",
+        "description": "Key API for Zerofox",
+        "type": "string",
+        "multi": false,
+        "required": true,
+        "defaultValue": ""
+      }
+    ],
+    "dockerImage": "theobhang/zerofox_takedown_request_alpine:1"
+  }
+  ]
