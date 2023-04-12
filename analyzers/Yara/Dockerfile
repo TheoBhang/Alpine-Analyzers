@@ -4,13 +4,14 @@ WORKDIR /worker/
 
 COPY ./ /worker/Yara/
 
-RUN apk add --no-cache bash \
+RUN apk update \
+    && apk upgrade \
+    && apk add --no-cache --update \
     py3-pip \
-    alpine-sdk  \
-    make \
-    cmake \
-    boost-dev \
+    git \
+    libmagic \
     openssl-dev \
+    linux-headers \
     build-base \
     && rm -rf /var/cache/apk/*
 

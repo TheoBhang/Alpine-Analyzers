@@ -9628,8 +9628,8 @@
           "required": false
         },
         {
-          "name": "download_sample_if_high_alpineed",
-          "description": "Download automatically sample as observable if high_alpineed antivirus didn't recognize",
+          "name": "download_sample_if_highlighted",
+          "description": "Download automatically sample as observable if highlighted antivirus didn't recognize",
           "type": "boolean",
           "multi": false,
           "required": false
@@ -9682,7 +9682,7 @@
           "defaultValue": 60
         },
         {
-          "name": "high_alpineed_antivirus",
+          "name": "highlighted_antivirus",
           "description": "Add taxonomy if selected AV don't recognize observable",
           "type": "string",
           "multi": true,
@@ -9696,8 +9696,8 @@
           "required": false
         },
         {
-          "name": "download_sample_if_high_alpineed",
-          "description": "Download automatically sample as observable if high_alpineed antivirus didn't recognize",
+          "name": "download_sample_if_highlighted",
+          "description": "Download automatically sample as observable if highlighted antivirus didn't recognize",
           "type": "boolean",
           "multi": false,
           "required": false
@@ -9745,7 +9745,7 @@
           "defaultValue": 60
         },
         {
-          "name": "high_alpineed_antivirus",
+          "name": "highlighted_antivirus",
           "description": "Add taxonomy if selected AV don't recognize observable",
           "type": "string",
           "multi": true,

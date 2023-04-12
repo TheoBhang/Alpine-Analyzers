@@ -1,3 +1,4 @@
 yara-python
+python-magic
 cortexutils
 requests

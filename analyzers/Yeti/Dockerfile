@@ -10,6 +10,7 @@ RUN apk update \
     && apk upgrade \
     && apk add --no-cache --update \
     py3-pip \
+    git     \
     && rm -rf /var/cache/apk/*
 
 # Install dependencies
