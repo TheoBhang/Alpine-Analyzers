@@ -8,6 +8,8 @@ TheHiveProject/Cortex-Analyzers but changed the Dockerfile to make them with alp
 
 Alpine is much lighter so all analyzers and all responders take less space.
 
+All have their dependencies up to date.
+
 Since it is lighter it is also a little bit faster in overhaul.
 
 ## Sizes
