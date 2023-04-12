@@ -1,8 +1,8 @@
 # Alpine-Analyzers
 
-[Original Analyzers and responders](https://github.com/TheHive-Project/Cortex-Analyzers)
+TheHiveProject/Cortex-Analyzers but changed all Dockerfiles to make them with alpine
 
-TheHiveProject/Cortex-Analyzers but changed the Dockerfile to make them with alpine
+[Original Analyzers and responders](https://github.com/TheHive-Project/Cortex-Analyzers)
 
 ## Why ?
 
