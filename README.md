@@ -4,6 +4,10 @@ TheHiveProject/Cortex-Analyzers but changed all Dockerfiles to make them with al
 
 [Original Analyzers and responders](https://github.com/TheHive-Project/Cortex-Analyzers)
 
+## Testing
+
+All Analyzers and reponders are available to be pulled for testing in dockerhub via my address theobhang/(name of the analyzer | responder)
+
 ## Why ?
 
 Alpine is much lighter so all analyzers and all responders take less space.
